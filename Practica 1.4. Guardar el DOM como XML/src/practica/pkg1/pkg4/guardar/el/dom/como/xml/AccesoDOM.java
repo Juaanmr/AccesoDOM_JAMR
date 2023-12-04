@@ -85,6 +85,7 @@ public class AccesoDOM {
         }
     }
 
+    //creo el metodo de insertar un libro con una variable para cada cosa titulo, autor y fecha
     public int insertLibroEnDOM(String titulo, String autor, String fecha){
         try {
             System.out.println("Añadir libro al árbol DOM: " + titulo + ";" + autor + ";" + fecha);
@@ -120,6 +121,7 @@ public class AccesoDOM {
         }
     }
 
+    //creo el metodo para borrar un libro segun su titulo
     public int deleteNode(String tit) {
         System.out.println("Buscando el Libro " + tit + " para borrarlo");
         try {
@@ -145,6 +147,7 @@ public class AccesoDOM {
         }
     }
 
+    //gurado el archivo actualizado 
     public void guardarDOMcomoArchivo(String nuevoArchivo) {
         try {
             Source src = new DOMSource(doc); // Definimos el origen

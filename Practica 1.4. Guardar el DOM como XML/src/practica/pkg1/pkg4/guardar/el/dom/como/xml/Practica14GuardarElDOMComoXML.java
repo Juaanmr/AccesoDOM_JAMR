@@ -24,6 +24,7 @@ public class Practica14GuardarElDOMComoXML {
         a.recorreDOMyMuestra();
         a.insertLibroEnDOM("Yerma", "Lorca", "1935");
         a.deleteNode("Don Quijote");
+        //creo el archivo donde se me guarda el nuevo libro que he isertado usadon los metodos anteriores
         a.guardarDOMcomoArchivo("LibrosDeDom.xml");
     }
 }
